@@ -15,20 +15,21 @@ from shiny import *
 # TODO: Change the shinyswatch theme to morph, cosmo, darkly, flatly, sketchy (or other shinyswatch theme)
 # Preview at https://bootswatch.com/
 app_ui = ui.page_navbar(
-    shinyswatch.theme.morph(),
+    shinyswatch.theme.quartz(),
     ui.nav(
         "Home",
         ui.layout_sidebar(
             ui.panel_sidebar(
-                ui.h2("Sidebar Panel"),
+                ui.h2("Home"),
                 ui.tags.hr(),
-                ui.h3("User Interaction Here"),
+                ui.h3("What would you like to do today?"),
                 ui.input_text("name_input", "Enter your name", placeholder="Your Name"),
-                ui.input_text("language_input", "Enter your favorite language(s)", placeholder="Favorite Programming Language(s)"),
+                ui.input_text("language_input", "Enter your favorite activities", placeholder="Favorite Activities"),
+                ui.input_text("place_input", "Enter your favorite locations", placeholder = "Favorite Places"),
                 ui.tags.hr(),
             ),
             ui.panel_main(
-                ui.h2("Main Panel with Reactive Output"),
+                ui.h2("Character Counter"),
                 ui.output_text_verbatim("welcome_output"),
                 ui.output_text_verbatim("insights_output"),
             ),
@@ -69,8 +70,9 @@ def server(input, output, session):
     @render.text
     def insights_output():
         answer = input.language_input()
-        count = len(answer)
-        language_string = f'You like {answer}. That takes {count} characters'
+        count = len(answer) + len(place_answer)
+        place_answer = input.place_input()
+        language_string = f'So you like to {answer} and go to {place_answer}? That takes {count} characters. Sounds fun!'
         return language_string
 
 # Create a Shiny App by passing in the two parts defined above.
