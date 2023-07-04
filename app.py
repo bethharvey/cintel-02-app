@@ -70,8 +70,8 @@ def server(input, output, session):
     @render.text
     def insights_output():
         answer = input.language_input()
-        count = len(answer) + len(place_answer)
         place_answer = input.place_input()
+        count = len(answer) + len(place_answer)
         language_string = f'So you like to {answer} and go to {place_answer}? That takes {count} characters. Sounds fun!'
         return language_string
 
