@@ -1,8 +1,14 @@
 # Continuous Intelligence and Interactive Analytics - Initial App
 
-- Interactive app: [cintel-02-app](https://denisecase.shinyapps.io/cintel-02-app/)
-- Repository: [cintel-02-app](https://github.com/denisecase/cintel-02-app)
-- Author: [Denise Case](https://github.com/denisecase)
+- Interactive app: [cintel-02-app](https://bethharvey.shinyapps.io/cintel-02-app/)
+- Repository: [cintel-02-app](https://github.com/bethharvey/cintel-02-app)
+- Author: [Beth Harvey](https://github.com/bethharvey)
+
+Continuous Intelligence and Interactive Analytics
+Module 2
+July 4, 2023
+
+The goal of this project is to create a basic custom app using Shiny for Python.
 
 In this module, we add another important tool: Python. 
 If you are new to Python, don't worry, it's relatively easy to learn and very powerful.
