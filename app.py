@@ -72,7 +72,7 @@ def server(input, output, session):
         answer = input.language_input()
         place_answer = input.place_input()
         count = len(answer) + len(place_answer)
-        language_string = f'So you like to {answer} and go to {place_answer}? That takes {count} characters. Sounds fun!'
+        language_string = f'So you like {answer} and go to {place_answer}? That takes {count} characters. Sounds fun!'
         return language_string
 
 # Create a Shiny App by passing in the two parts defined above.
