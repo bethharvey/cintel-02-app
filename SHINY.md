@@ -22,9 +22,6 @@ Type the following command in the terminal and hit Enter to run it.
 python --version
 ```
 
-If that does not work, try `python3 --version` or `py --version`. 
-Use the command that works instead of `python` in the following instructions. 
-
 🚀 Rocket Tip: Modify this README.md file to reflect the commands that work on your machine. 
 
 ### 1A Install and Upgrade Python Tools Globally

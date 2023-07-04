@@ -7,10 +7,10 @@ We'll deploy the app to [shinyapps.io](http://www.shinyapps.io/) by running a co
 - Use Terminal / New Terminal to open a new Terminal window.  
 - In the command below, the dot (.) means "this folder here".
 
-TODO: Change this Markdown file to reflect your username instead of denisecase.
+ TODO: Change this Markdown file to reflect your username instead of denisecase.
 
 ```shell
-rsconnect deploy shiny . --name denisecase --title cintel-02-app
+rsconnect deploy shiny . --name bethharvey --title cintel-02-app
 ```
 
 I run Python 3.11 on my machine - but shinyapps.io only supports 3.10, so I got the following **error** when trying to deploy with the command.
